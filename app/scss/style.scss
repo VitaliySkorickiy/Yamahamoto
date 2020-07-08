@@ -67,7 +67,7 @@
     left: 0;
     bottom: 0;
     background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225974) 50.29%, rgba(4, 5, 5, 0.820343) 58.72%, rgba(5, 5, 6, 0.792703) 80.08%, #000000 87.89%);
-    opacity: 0.4;
+    opacity: 0.1;
   }
 
   &__wrapper {
@@ -79,19 +79,20 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
   }
 
   &__title {
     font-size: 96px;
     line-height: 115px;
     @extend %sf-semibold;
-    margin-bottom: 25px;
+    margin-bottom: 55px;
   }
 
   &__text {
-    margin: 25px 0px 35px;
     max-width: 325px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
   }
 
   &__social-item {
@@ -343,23 +344,23 @@
     background-image: url(../images/pointer1.svg);
     width: 229px;
     height: 114px;
-    right: -140px;
+    right: -250px;
     top: 16px;
   }
 
   &__box-2::before {
     background-image: url(../images/pointer2.svg);
-    width: 345px;
-    height: 81px;
-    right: -308px;
-    top: -65px;
+    width: 378px;
+    height: 61px;
+    right: -282px;
+    top: -26px;
   }
 
   &__box-3::before {
     background-image: url(../images/pointer3.svg);
     width: 258px;
     height: 103px;
-    left: -299;
+    left: -267px;
     top: 16px;
   }
 
@@ -367,7 +368,7 @@
     background-image: url(../images/pointer4.svg);
     width: 124px;
     height: 89px;
-    left: -172px;
+    left: -150px;
     top: -73px;
   }
 
@@ -394,19 +395,22 @@
     padding-bottom: 15px;
   }
 
+
+
   &__item {
     background-color: rgba(0, 0, 0, 0.3);
     max-width: 690px;
     position: relative;
 
-    &:nth-child(3)::before {
+    &:first-child::before {
       content: '';
       position: absolute;
-      width: 319px;
-      height: 125px;
-      top: -33px;
-      right: -386px;
-      background-image: url(../images/questionsbg.svg);
+      width: 650px;
+      height: 350px;
+      top: 50px;
+      right: -750px;
+      background-image: url(../images/Yamaha.png);
+      background-size: cover;
     }
 
   }
@@ -457,9 +461,22 @@
 }
 
 
+
 // ============  contacts ====================
 
 .contacts {
+  background-image: url(../images/topbg11.jpg);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: #000;
+  }
 
   &__inner {
     display: flex;
@@ -556,24 +573,29 @@
     color: #fff;
     background-color: transparent;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       transition: all .3s;
       background-color: #fff;
       color: #000;
     }
   }
-  &__social-list{
+
+  &__social-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  &__social-link{
+
+  &__social-link {
     opacity: .5;
-    &:hover{
+
+    &:hover {
       opacity: 1;
     }
   }
-  &__social-item{
+
+  &__social-item {
     margin: 14px 0;
 
   }
@@ -582,12 +604,13 @@
 // ============  footer =============
 
 
-.footer{
+.footer {
   position: absolute;
   bottom: 32px;
   left: 0;
   right: 0;
-  &__copy{
+
+  &__copy {
     text-align: right;
     font-size: 13px;
     line-height: 15px;
